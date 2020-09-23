@@ -1,8 +1,8 @@
-// Aniamte On Scroll Initialization
+// Aniamte On Scroll Initialization.
 AOS.init();
 
 
-// Responsive Jumbotron
+// Responsive Jumbotron.
 $(".jumbotron").css({ height: $(window).height() + "px" });
 
 $(window).on("resize", function() {
@@ -10,7 +10,7 @@ $(window).on("resize", function() {
 });
 
 
-// To Disable form submissions if there are invalid fields
+// To Disable form submissions if there are invalid fields.
 (function() {
     "use strict";
     window.addEventListener("load", function() {
@@ -30,6 +30,7 @@ $(window).on("resize", function() {
         });
     }, false);
 })();
+
 
 
 
