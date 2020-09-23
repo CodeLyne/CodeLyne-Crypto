@@ -1,0 +1,260 @@
+/*    Global Styles   */
+:root {
+    --crypt: #2de2cd;
+    --cool-light: #f2f2f2;
+    --thin-light: #e0e0e0;
+    --crypt-blue: #3322a6;
+    --crypt-dark: #414464;    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    line-height: 1.5em;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.crypt {
+    color: var(--crypt);
+}
+
+.cool-light {
+    color: var(--cool-light);
+}
+
+.thin-light {
+    color: var(--thin-light);
+}
+
+/*   End of Global Styles   */
+
+
+/*   Begining of Crypt Home NavBar   */
+#crypt-home {
+    max-height: 50em;
+}
+
+.crypt--bg {
+    background: linear-gradient(116.82deg, #3222B8 0%, #46279C 100%);
+}
+
+.jumbotron--bg {
+    background: url(../Images/crypt-jumotron-bg-2.png) fixed center no-repeat;
+    background-size: round;/*
+    padding-top: 15em;*/
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2.6em;
+    line-height: 2em;
+    color: var(--crypt);
+}
+
+.navbar-brand:hover {
+    color: var(--cool-light);
+    opacity: 0.9;
+    transition: all ease-in-out 700ms;
+}
+
+.nav-link {
+    height: 2em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.35em;
+    line-height: 2em;
+    color: var(--cool-light);
+}
+
+.nav--btn {
+    width: 12em;
+    height: 2.7em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.35em;
+    line-height: 2em;
+    background-color: #ffffff1c;
+    color: var(--cool-light);
+    border-radius: 0.33em;
+}
+
+.nav-link:hover,
+.nav--btn:hover {
+    color: var(--crypt);
+    transition: color ease-in-out 700ms;
+}
+
+.nav--btn:hover {
+    background-color: #ffffff4d;
+    color: #2de2cdf2;
+    transition: all ease-in-out 700ms;
+}
+
+/*   End of Crypt Nav Bar   */
+
+
+/*   Begining of Jumbotron   */
+.jumbotron {
+    color: var(--cool-light);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: auto;
+}
+
+.jumbotron--img {
+    width: 38em;/*
+    height: 60em;*/
+}
+
+.jumbotron--bold {
+    font-weight: 900;
+    font-size: 3.8em;
+    color: var(--cool-light);
+}
+
+.jumbotron--thin {
+    font-weight: 500;
+    font-size: 1.4em;
+    color: var(--thin-light);
+}
+
+.jumbotron--btn {
+    width: 9em;
+    height: 2.5em;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: 0.5em;
+    background: var(--crypt);
+    color: #fff;
+    border-radius: 0.33em
+}
+
+.jumbotron--btn:hover {
+    background-color: #2de2cdb3;
+    color: #fff;
+    transition: all ease-in-out 700ms;
+}
+
+.jumbotron--btn__outline {
+    width: 13em;
+    height: 2.5em;
+    font-weight: 500;
+    font-size: 1.4em;
+    padding: 0.4em;
+    color: #bdbdbd;
+    border: 2px solid var(--crypt);
+    border-radius: 0.33em;
+}
+
+.jumbotron--btn__outline:hover {
+    background-color: #2de2cd99;
+    color: #fff;
+    transition: all ease-in-out 700ms;
+}
+
+/*   End of Jumbotron   */
+
+
+
+/*   ----------Begining of Main----------   */
+/*   Begining of About Us Section   */
+.crypt--body {
+    background: #fbfefe;
+}
+
+.about-us {
+    padding: 3em 0em;
+    height: auto;
+    overflow: hidden;
+}
+
+.img__left {
+    width: 7em;
+    height: 25em;
+    opacity: 0.5;
+}
+
+.img__right {
+    width: 15em;
+    height: 15em;
+    opacity: 0.5;
+}
+
+.lead--text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.33em;
+    color: var(--crypt-blue);
+}
+
+.main--text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2em;
+    color: var(--crypt-dark);
+}
+
+.underline {
+    font-size: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--crypt);
+}
+
+.sub--text {
+    font-weight: 500;
+    font-size: 1.33em;
+    color: var(--crypt-dark);
+    opacity: 0.6;/*
+    color: #828282;*/
+    max-width: 40%;
+}
+
+/*   End of About Us Section   */
+
+/*   Begining of services Section   */
+
+
+
+
+
+
+
+/*   MEDIA QUERIES   */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    #crypt-home {
+        min-height: 65em;/*
+        height: 150vh;*/
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    #crypt-home {
+        height: 35em;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    #crypt-home {
+        max-height: 40em;
+    }
+}
+
+/*   End of Media Queries   */
+
+
+
+
